@@ -1,0 +1,14 @@
+{{#partial "content"}}
+    <p>Job Info:</p>
+    <p>Title: {{jobs.title}}</p>
+    <p>Description: {{jobs.description}}</p>
+    <p>Contact: {{jobs.contact}}</p>
+    <h5>Created At:</h5>
+    <p> {{jobs.posted}}</p>
+
+        <br>
+        <a href="/jobs/{{jobs.id}}/update">Edit this job</a>
+        <br>
+        <a href="/jobs/{{jobs.id}}/delete">DELETE this job (no undo)</a>
+{{/partial}}
+{{> layout.hbs}}

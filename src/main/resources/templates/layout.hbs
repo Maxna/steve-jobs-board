@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{#block "title"}}Job Posting{{/block}}</title>
+
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+</head>
+<body>
+<ul class="nav nav-tabs">
+    <li role="presentation" class="active"><a href="/">Home</a></li>
+    <li role="presentation"><a href="/jobs">See All Jobs</a></li>
+    <li role="presentation"><a href="/jobs/new">Add a New Job Posting</a></li>
+</ul>
+<div class="container">
+    <!--begin main template-->
+    <div class="page-header">
+        <img src="/images/jeve.png" width="70%">
+        <h1>Welcome to my Epicodus Steve Job Opening List Posting of qualified candidates for  steve jobs. <small>A journey into code employment for listing jeve stob openings and CRUD code!</small></h1>
+    </div>
+
+    <div class="col-md-12">
+        {{#block "content"}}
+        {{/block}}
+
+    </div>
+</div>
+<!--end main template-->
+{{#block "footer"}}
+    </body>
+    </html>
+{{/block}}
